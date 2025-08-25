@@ -1,4 +1,4 @@
-#!/workspaces/codespaces-blank/fastweb/.venv/bin/python3
+#!/workspaces/codespaces-blank/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
