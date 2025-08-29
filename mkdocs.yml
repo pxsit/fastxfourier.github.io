@@ -1,17 +1,23 @@
 site_name: Fast X Fourier
 site_url: https://fastxfourier.github.io/
-
-nav:
-  - Home: index.md
-  - Data Structures and Algorithms:
-    - Algorithms:
-      - Bitmask DP: /algorithm/bitmask-dp
 theme:
   name: material
-  logo: assets/images/logo.png
-  favicon: assets/images/logo.png
   font:
     text: "Itim"
-    size: "50px"
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
   palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Dark mode
+      primary: black
+      accent: deep purple
+    # Light Mode
     - scheme: default
+      toggle:
+        icon: material/lightbulb-on-10
+        name: Light mode
+      primary: white
+      accent: deep purple
