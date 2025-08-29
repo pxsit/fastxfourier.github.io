@@ -1,17 +1,4 @@
-# Welcome to MkDocs
+# Fast X Fourier
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+เว็บไซต์ของเราคือแหล่งรวมเฉลยโจทย์แข่งขัน TOI รวมถึงโจทย์แข่งขันอื่น ๆ ให้ฟรี! เราตั้งใจจัดทำเพื่อช่วยให้ทุก ๆ คนได้เรียนรู้และเตรียมตัวสำหรับการแข่งขันอย่างมีประสิทธิภาพ
+ทุกบทเฉลยเขียนด้วยภาษาไทย เข้าใจง่าย พร้อมอธิบายแนวคิดอย่างละเอียด ไม่ว่าคุณจะกำลังเริ่มต้น หรืออยากทบทวนโจทย์ยาก ๆ — เราพร้อมช่วยคุณเสมอ
