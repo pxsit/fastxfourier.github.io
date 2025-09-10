@@ -1,7 +1,20 @@
 site_name: Fast X Fourier
 site_url: https://fastxfourier.github.io/
+
+nav:
+  - Home: index.md
+  - Algorithms:
+      - Bitmask DP : algorithms/bitmask_dp.md
+  - Problems:
+      - TOI:
+          - 21:
+              - toi21_duty_free : problems/toi21_duty_free.md
+
 theme:
   name: material
+  features:
+    - content.code.copy
+    - content.code.select
   font:
     text: "Itim"
   logo: assets/images/logo.png
@@ -21,3 +34,18 @@ theme:
         name: Light mode
       primary: white
       accent: deep purple
+      
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
