@@ -1,0 +1,8 @@
+.md-nav__link--active {
+    color: #ff0000 !important;
+    font-weight: bold;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+    color: #ff0000 !important;
+}

@@ -4,15 +4,22 @@ site_url: https://fastxfourier.github.io/
 nav:
   - Home: index.md
   - Algorithms:
+      - Algorithms: algorithms.md
       - Bitmask DP : algorithms/bitmask_dp.md
   - Problems:
+      - Problems: problems/index.md
       - TOI:
           - 21:
               - toi21_duty_free : problems/toi21_duty_free.md
+  - Others:
+      - Others: others/index.md
+  - About:
+      - About: about/index.md
 
 theme:
   name: material
   features:
+    - navigation.tabs
     - content.code.copy
     - content.code.select
   font:
@@ -49,3 +56,6 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - admonition
+
+extra_css:
+  - stylesheets/overrides.css
