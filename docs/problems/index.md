@@ -127,5 +127,6 @@ function applyFilter() {
 }
 .tagbox {
     color: black;
+    border-color: #868686ff;
 }
 </style>
