@@ -22,13 +22,11 @@ hide: navigation, toc
   <!-- Source filter -->
   <strong>Source:</strong><br>
   <label><input type="checkbox" value="TOI" class="filter-source"> TOI</label>
-  <label><input type="checkbox" value="API" class="filter-source"> API</label>
   <br><br>
 
   <!-- Topics filter -->
   <strong>Topics:</strong><br>
   <label><input type="checkbox" value="Disjoint Set Union" class="tag"> Disjoint Set Union</label>
-  <label><input type="checkbox" value="Graph" class="tag"> Graph</label>
   <label><input type="checkbox" value="Dynamic Programming" class="tag"> Dynamic Programming</label>
   <label><input type="checkbox" value="Bitmask" class="tag"> Bitmask</label>
   <br><br>
