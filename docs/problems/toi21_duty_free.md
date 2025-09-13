@@ -1,5 +1,9 @@
-# [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
 ---
+title: toi21_duty_free
+tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
+---
+# [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
+
 ## Problem
 ### สรุปโจทย์
 เรามีลูกค้าจะซื้อกระเป๋า `N` คน ไล่คิวจากคนที่ `1` ถึงคนที่ `N` โดยคนที่ `i` สามารถเดินได้ไกลสุด `max_allowed_positions[i - 1]` ตำแหน่ง โดย:

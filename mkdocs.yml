@@ -6,11 +6,7 @@ nav:
   - Algorithms:
       - Algorithms: algorithms.md
       - Bitmask DP : algorithms/bitmask_dp.md
-  - Problems:
-      - Problems: problems/index.md
-      - TOI:
-          - 21:
-              - toi21_duty_free : problems/toi21_duty_free.md
+  - Problems: problems/index.md
   - Others:
       - Others: others/index.md
   - About:
@@ -52,10 +48,21 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.betterem
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - admonition
-
+  - attr_list
+  - md_in_html
 extra_css:
   - stylesheets/overrides.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fastxfourier
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/people/Fast-X-Fourier/61576340114509/
