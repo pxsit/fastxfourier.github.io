@@ -22,14 +22,14 @@ theme:
     - scheme: slate
       toggle:
         icon: material/lightbulb
-        name: Dark mode
+        name: Switch to light mode
       primary: black
       accent: deep purple
     # Light Mode
     - scheme: default
       toggle:
         icon: material/lightbulb-on-10
-        name: Light mode
+        name: Switch to dark mode
       primary: white
       accent: deep purple
       
