@@ -81,7 +81,7 @@ function toggleTagPicker() {
     picker.style.display = isHidden ? 'block' : 'none';
     
     // Change arrow
-    btn.textContent = isHidden ? 'Tags ⬆️' : 'Tags ⬇️';
+    btn.textContent = isHidden ? 'Tags ⬇️' : 'Tags ⬆️';
     
     // Save visibility in localStorage
     localStorage.setItem('tagPickerVisible', picker.style.display);
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById('toggle-tags-btn');
     const visible = localStorage.getItem('tagPickerVisible') || 'none';
     picker.style.display = visible;
-    btn.textContent = visible === 'none' ? 'Tags ⬇️' : 'Tags ⬆️';
+    btn.textContent = visible === 'none' ? 'Tags ⬆️' : 'Tags ⬇️';
 
     // Add instant filtering when checkboxes are toggled
     document.querySelectorAll('.filter-difficulty, .filter-source, .tag').forEach(cb => {
