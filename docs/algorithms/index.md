@@ -2,7 +2,7 @@
 hide: navigation, toc
 ---
 
-# Problems
+# Algorithms
 
 <!-- Tags menu at the top -->
 <div style="margin-bottom: 20px;">
@@ -19,55 +19,27 @@ hide: navigation, toc
   <label><input type="checkbox" value="Hard" class="filter-difficulty"> Hard</label>
   <br><br>
 
-  <!-- Source filter -->
-  <strong>Source:</strong><br>
-  <label><input type="checkbox" value="TOI" class="filter-source"> TOI</label>
-  <br><br>
-
   <!-- Topics filter -->
   <strong>Topics:</strong><br>
-  <label><input type="checkbox" value="Disjoint Set Union" class="tag"> Disjoint Set Union</label>
+  <label><input type="checkbox" value="Graph" class="tag"> Graph Algorithms</label>
   <label><input type="checkbox" value="Dynamic Programming" class="tag"> Dynamic Programming</label>
-  <label><input type="checkbox" value="Bitmask" class="tag"> Bitmask</label>
   <label><input type="checkbox" value="Data Structures" class="tag"> Data Structures</label>
 </div>
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
 
-<div class="problem-card" data-difficulty="Hard" data-source="TOI" data-topics="Disjoint Set Union" markdown="1">
-### [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
+<div class="problem-card" data-difficulty="Hard" data-topics="Dynamic Programming" markdown="1">
+### Bitmask DP
 
-!!! Danger "**Difficulty**: `Hard`"
-!!! quote "**Source**: `TOI`"
-??? Topics
-    - `Disjoint Set Union`
-
-[View Solution](/problems/toi21_duty_free)
-</div>
-
-<div class="problem-card" data-difficulty="Easy" data-source="TOI" data-topics="Dynamic Programming,Bitmask" markdown="1">
-### Bitmask DP & [toi20_bit_string](https://programming.in.th/tasks/toi20_bit_string/)
-
-!!! success "**Difficulty**: `Easy`"
-!!! quote "**Source**: `TOI`"
+!!! danger "**Difficulty**: `Hard`"
 ??? Topics
     - `Dynamic Programming`
-    - `Bitmask`
 
 [View Solution](/problems/toi20_bit_string)
 </div>
 
-<div class="problem-card" data-difficulty="Easy" data-source="TOI" data-topics="Data Structures" markdown="1">
-### [toi20_orbs](https://programming.in.th/tasks/toi20_orbs/)
 
-!!! success "**Difficulty**: `Easy`"
-!!! quote "**Source**: `TOI`"
-??? Topics
-    - `Data Structures`
-
-[View Solution](/problems/toi20_orbs)
-</div>
 </div>
 
 <!-- Scripts -->
@@ -93,10 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById('toggle-tags-btn');
     const visible = localStorage.getItem('tagPickerVisible') || 'none';
     picker.style.display = visible;
+    
     btn.textContent = visible === 'none' ? 'Tags ⬇️' : 'Tags ⬆️';
 
-    // Add instant filtering when checkboxes are toggled
-    document.querySelectorAll('.filter-difficulty, .filter-source, .tag').forEach(cb => {
+    // Add instant filtering on checkbox change
+    document.querySelectorAll('.filter-difficulty, .tag').forEach(cb => {
         cb.addEventListener('change', applyFilter);
     });
 
@@ -107,17 +80,14 @@ document.addEventListener("DOMContentLoaded", function() {
 // Apply filter
 function applyFilter() {
     const selectedD = Array.from(document.querySelectorAll('.filter-difficulty:checked')).map(cb => cb.value);
-    const selectedS = Array.from(document.querySelectorAll('.filter-source:checked')).map(cb => cb.value);
     const selectedT = Array.from(document.querySelectorAll('.tag:checked')).map(cb => cb.value);
 
     const cards = document.querySelectorAll('.problem-card');
     cards.forEach(card => {
         const cardD = card.getAttribute('data-difficulty').split(',').map(s => s.trim());
-        const cardS = card.getAttribute('data-source').split(',').map(s => s.trim());
         const cardT = card.getAttribute('data-topics').split(',').map(s => s.trim());
 
         const visible = (selectedD.length === 0 || selectedD.some(d => cardD.includes(d))) &&
-                        (selectedS.length === 0 || selectedS.some(s => cardS.includes(s))) &&
                         (selectedT.length === 0 || selectedT.some(t => cardT.includes(t)));
 
         card.style.display = visible ? '' : 'none';
