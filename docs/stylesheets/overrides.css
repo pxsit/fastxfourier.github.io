@@ -326,3 +326,26 @@ body[data-md-color-scheme="default"] .tag-toggle {
     color: #111214 !important;
     border-color: rgba(0,0,0,0.65) !important;
 }
+
+/* Make header and navigation text a little darker in light mode */
+@media (prefers-color-scheme: light) {
+    .md-header__title,
+    .md-header__topic,
+    .md-header__ellipsis,
+    .md-header .md-logo,
+    .md-header .md-header__button,
+    .md-nav__link,
+    .md-tabs__link {
+        color: #0f1112 !important; /* slightly stronger black for header/nav */
+    }
+}
+
+body[data-md-color-scheme="default"] .md-header__title,
+body[data-md-color-scheme="default"] .md-header__topic,
+body[data-md-color-scheme="default"] .md-header__ellipsis,
+body[data-md-color-scheme="default"] .md-header .md-logo,
+body[data-md-color-scheme="default"] .md-header .md-header__button,
+body[data-md-color-scheme="default"] .md-nav__link,
+body[data-md-color-scheme="default"] .md-tabs__link {
+    color: #0f1112 !important;
+}
