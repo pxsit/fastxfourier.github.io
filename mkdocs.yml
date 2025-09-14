@@ -3,14 +3,9 @@ site_url: https://fastxfourier.github.io/
 
 nav:
   - Home: index.md
-  - Algorithms:
-      - Algorithms: algorithms.md
-      - Bitmask DP : algorithms/bitmask_dp.md
+  - Algorithms: algorithms/index.md
   - Problems: problems/index.md
-  - Others:
-      - Others: others/index.md
-  - About:
-      - About: about/index.md
+  - Others: others/index.md
 
 theme:
   name: material
