@@ -3,7 +3,7 @@ title: toi21_duty_free
 tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 ---
 # [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
-
+---
 ## Problem
 ### สรุปโจทย์
 เรามีลูกค้าจะซื้อกระเป๋า `N` คน ไล่คิวจากคนที่ `1` ถึงคนที่ `N` โดยคนที่ `i` สามารถเดินได้ไกลสุด `max_allowed_positions[i - 1]` ตำแหน่ง โดย:
@@ -55,15 +55,13 @@ tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 
 ซึ่งจะทำให้ time complexity ทั้งหมดลดเหลือ $O(n)$ นั่นเอง  
 
----
-
 ### Summary
 - ใช้ Greedy Algorithm ในการเลือกช่องที่จะวางกระเป๋า  
 - ใช้ Disjoint Set Union ในการ optimize โค้ด  
 
 ---
 
-## Solution Code:
+### Code
 
 ```cpp title="toi21_duty_free.cpp"
 #include <bits/stdc++.h>
@@ -100,7 +98,6 @@ int minimum_bag_rearrangement_time(vector<int> max_allowed_positions){
 }
 ```
 
----
-## Total Time Complexity: $O(n)$
----
+!!! note "Total Time Complexity"  
+    $O(N)$
 หากมีข้อสงสัย comment ไว้ใต้ [post](https://www.facebook.com/share/p/171iGYrhtd/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️

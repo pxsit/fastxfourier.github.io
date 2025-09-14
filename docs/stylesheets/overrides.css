@@ -136,3 +136,14 @@ body.md-page-problems-index .md-main__inner {
     transition-duration: 200ms;
     color: black;
 }
+
+.bitmask_dp {
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bitmask-container {
+    display: flex;
+    justify-content: center;
+}
