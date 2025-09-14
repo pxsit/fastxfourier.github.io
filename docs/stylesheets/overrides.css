@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: box-shadow 0.2s ease;
-    padding-left: 50px;
+    padding-left: 5%;
     padding-bottom: 20px;
 }
 
