@@ -200,3 +200,86 @@ body.md-page-problems-index .md-main__inner {
     font-weight: bold;
     margin-top: auto;
 }
+
+/* Dark mode: soften pure white colors to a dimmer white for less glare */
+@media (prefers-color-scheme: dark) {
+    /* Use a slightly dimmer white and increase transparency for backgrounds */
+    .submit {
+        background-color: rgba(230,230,230,0.12); /* softer on dark bg */
+        color: #e6e6e6;
+        border-color: rgba(230,230,230,0.18);
+    }
+    .submit:hover {
+        background-color: rgba(230,230,230,0.16);
+    }
+
+    .tagbox {
+        background: rgba(255,255,255,0.03);
+        border-color: rgba(255,255,255,0.06);
+        color: #e6e6e6;
+    }
+    .tagbox * {
+        color: #e6e6e6;
+    }
+
+    .tag-toggle {
+        background-color: rgba(255,255,255,0.04);
+        color: #e6e6e6;
+        border-color: rgba(230,230,230,0.12);
+    }
+
+    .problem-card, .problem-card-other {
+        background-color: rgba(255,255,255,0.03);
+        color: #e6e6e6;
+        border-color: rgba(255,255,255,0.06);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    /* Generic fixes for any remaining white backgrounds inside docs */
+    .md-typeset, .md-content, .md-main, .md-main__inner {
+        background-color: transparent;
+    }
+    /* Reduce bright primary white usage in links/headers */
+    .md-nav__link--active, .md-tabs__link--active, .md-header, .md-footer {
+        color: #e6e6e6 !important;
+    }
+}
+
+/* More specific: Material theme sets `data-md-color-scheme="slate"` on <body> for dark palette.
+   Use attribute selectors to ensure overrides apply when the site is in the dark palette. */
+body[data-md-color-scheme="slate"] .submit {
+    background-color: rgba(230,230,230,0.12) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(230,230,230,0.18) !important;
+}
+body[data-md-color-scheme="slate"] .submit:hover {
+    background-color: rgba(230,230,230,0.16) !important;
+}
+body[data-md-color-scheme="slate"] .tagbox {
+    background: rgba(255,255,255,0.03) !important;
+    border-color: rgba(255,255,255,0.06) !important;
+    color: #e6e6e6 !important;
+}
+body[data-md-color-scheme="slate"] .tagbox * {
+    color: #e6e6e6 !important;
+}
+body[data-md-color-scheme="slate"] .tag-toggle {
+    background-color: rgba(255,255,255,0.04) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(230,230,230,0.12) !important;
+}
+body[data-md-color-scheme="slate"] .problem-card,
+body[data-md-color-scheme="slate"] .problem-card-other {
+    background-color: rgba(255,255,255,0.03) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(255,255,255,0.06) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6) !important;
+}
+
+/* Also make sure any inline styles (from pages) don't force bright white when dark scheme is active */
+body[data-md-color-scheme="slate"] [style*="background:#fff"],
+body[data-md-color-scheme="slate"] [style*="background:#ffffff"],
+body[data-md-color-scheme="slate"] [style*="background: #fff"],
+body[data-md-color-scheme="slate"] [style*="background: #ffffff"] {
+    background-color: transparent !important;
+}

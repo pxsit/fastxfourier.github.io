@@ -10,7 +10,7 @@ hide: navigation, toc
 </div>
 
 <!-- Tag picker -->
-<div class="tagbox" id="tag-picker" style="border:1px solid #868686; padding:10px; margin-bottom:20px; border-radius:5px; background:#f9f9f9; max-width:600px; display:none;">
+<div class="tagbox" id="tag-picker" style="border:1px solid #868686; padding:10px; margin-bottom:20px; border-radius:5px; max-width:600px; display:none;">
 
   <!-- Difficulty filter -->
   <strong>Difficulty:</strong><br>
