@@ -29,6 +29,7 @@ hide: navigation, toc
   <label><input type="checkbox" value="Disjoint Set Union" class="tag"> Disjoint Set Union</label>
   <label><input type="checkbox" value="Dynamic Programming" class="tag"> Dynamic Programming</label>
   <label><input type="checkbox" value="Bitmask" class="tag"> Bitmask</label>
+  <label><input type="checkbox" value="Data Structures" class="tag"> Data Structures</label>
   <br><br>
 
   <button class="submit" onclick="applyFilter()" style="padding:5px 15px; cursor:pointer;">Filter</button>
@@ -60,6 +61,16 @@ hide: navigation, toc
 [View Solution](/problems/toi20_bit_string)
 </div>
 
+<div class="problem-card" data-difficulty="Easy" data-source="TOI" data-topics="Data Structures" markdown="1">
+#### [toi20_orbs](https://programming.in.th/tasks/toi20_orbs/)
+
+!!! success "**Difficulty**: `Easy`"
+!!! quote "**Source**: `TOI`"
+??? Topics
+    - `Data Structures`
+
+[View Solution](/problems/toi20_orbs)
+</div>
 </div>
 
 <!-- Scripts -->

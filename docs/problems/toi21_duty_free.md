@@ -41,7 +41,7 @@ tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 ดังนั้น ความยากของโจทย์ข้อนี้คือ วิธีการที่เราจะ optimize โค้ดให้เหลือ $O(n)$  
 โดยเราจะใช้ DSU (Disjoint Set Union) ในการ optimize โค้ดข้อนี้
 
-## วิธีการ optimize
+### วิธีการ optimize
 
 เราจะเก็บ auxiliary array ซึ่งจะเก็บว่า ชั้นวางที่ $i$ เราจะวางกระเป๋าของลูกค้าคนที่เท่าไหร่  
 และเราจะเก็บตัวแปรเพิ่ม 1 ตัวเป็น integer ชื่อว่า $f$ (ย่อจาก first)  
@@ -57,7 +57,7 @@ tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 
 ---
 
-## Summary
+### Summary
 - ใช้ Greedy Algorithm ในการเลือกช่องที่จะวางกระเป๋า  
 - ใช้ Disjoint Set Union ในการ optimize โค้ด  
 
