@@ -283,3 +283,46 @@ body[data-md-color-scheme="slate"] [style*="background: #fff"],
 body[data-md-color-scheme="slate"] [style*="background: #ffffff"] {
     background-color: transparent !important;
 }
+
+/* Light mode: make normal text a little darker (near-black) but not pure black */
+@media (prefers-color-scheme: light) {
+    .tagbox,
+    .tagbox * {
+        color: #111214; /* slightly greyed black for text */
+    }
+
+    .md-typeset,
+    .md-content,
+    .md-main,
+    .md-main__inner,
+    .problem-card,
+    .problem-card-other {
+        color: #111214;
+    }
+
+    .submit,
+    .tag-toggle {
+        color: #111214;
+        border-color: rgba(0,0,0,0.65);
+    }
+}
+
+/* Also target the Material theme default palette attribute to ensure the change applies
+   when the site sets the default scheme via JS (body[data-md-color-scheme="default"]) */
+body[data-md-color-scheme="default"] .tagbox,
+body[data-md-color-scheme="default"] .tagbox * {
+    color: #111214 !important;
+}
+body[data-md-color-scheme="default"] .md-typeset,
+body[data-md-color-scheme="default"] .md-content,
+body[data-md-color-scheme="default"] .md-main,
+body[data-md-color-scheme="default"] .md-main__inner,
+body[data-md-color-scheme="default"] .problem-card,
+body[data-md-color-scheme="default"] .problem-card-other {
+    color: #111214 !important;
+}
+body[data-md-color-scheme="default"] .submit,
+body[data-md-color-scheme="default"] .tag-toggle {
+    color: #111214 !important;
+    border-color: rgba(0,0,0,0.65) !important;
+}
