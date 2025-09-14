@@ -276,6 +276,36 @@ body[data-md-color-scheme="slate"] .problem-card-other {
     box-shadow: 0 4px 12px rgba(0,0,0,0.6) !important;
 }
 
+/* Force text to white-ish in dark (slate) scheme to undo any accidental darkening */
+body[data-md-color-scheme="slate"] .md-typeset,
+body[data-md-color-scheme="slate"] .md-content,
+body[data-md-color-scheme="slate"] .md-main,
+body[data-md-color-scheme="slate"] .md-main__inner,
+body[data-md-color-scheme="slate"] .md-header__title,
+body[data-md-color-scheme="slate"] .md-header__topic,
+body[data-md-color-scheme="slate"] .md-header__ellipsis,
+body[data-md-color-scheme="slate"] .md-header .md-logo,
+body[data-md-color-scheme="slate"] .md-header .md-header__button,
+body[data-md-color-scheme="slate"] .md-nav__link,
+body[data-md-color-scheme="slate"] .md-tabs__link,
+body[data-md-color-scheme="slate"] .tagbox,
+body[data-md-color-scheme="slate"] .tagbox *,
+body[data-md-color-scheme="slate"] .submit,
+body[data-md-color-scheme="slate"] .tag-toggle,
+body[data-md-color-scheme="slate"] .problem-card,
+body[data-md-color-scheme="slate"] .problem-card-other {
+    color: #ffffff !important;
+}
+
+/* Make header / nav text pure white in slate to ensure visibility */
+body[data-md-color-scheme="slate"] .md-header__title,
+body[data-md-color-scheme="slate"] .md-header__topic,
+body[data-md-color-scheme="slate"] .md-header__ellipsis,
+body[data-md-color-scheme="slate"] .md-nav__link,
+body[data-md-color-scheme="slate"] .md-tabs__link {
+    color: #ffffff !important;
+}
+
 /* Also make sure any inline styles (from pages) don't force bright white when dark scheme is active */
 body[data-md-color-scheme="slate"] [style*="background:#fff"],
 body[data-md-color-scheme="slate"] [style*="background:#ffffff"],
