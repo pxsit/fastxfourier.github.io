@@ -41,6 +41,50 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 2](https://grader.gchan.moe/problemset/c1_bkk67_2)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Arrays`
+
+[View Solution](/problems/posn1_67_bkk_p2)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Math" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 3](https://grader.gchan.moe/problemset/c1_bkk67_3)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Math`
+
+[View Solution](/problems/posn1_67_bkk_p3)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-else" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 4](https://grader.gchan.moe/problemset/c1_bkk67_4)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `If-else`
+
+[View Solution](/problems/posn1_67_bkk_p4)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,If-else" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 5](https://grader.gchan.moe/problemset/c1_bkk67_5)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Arrays`
+    - `If-else`
+
+[View Solution](/problems/posn1_67_bkk_p5)
+</div>
 
 <div class="problem-card" data-difficulty="Hard" data-source="TOI" data-topics="Disjoint Set Union" markdown="1">
 ### [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
@@ -87,50 +131,6 @@ hide: navigation, toc
 [View Solution](/problems/posn1_67_bkk_p1)
 </div>
 
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays" markdown="1">
-### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 2](https://grader.gchan.moe/problemset/c1_bkk67_2)
-
-!!! tip "**Difficulty**: `Very Easy`"
-!!! quote "**Source**: `POSN1`"
-??? Topics
-    - `Arrays`
-
-[View Solution](/problems/posn1_67_bkk_p2)
-</div>
-
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Math" markdown="1">
-### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 3](https://grader.gchan.moe/problemset/c1_bkk67_3)
-
-!!! tip "**Difficulty**: `Very Easy`"
-!!! quote "**Source**: `POSN1`"
-??? Topics
-    - `Math`
-
-[View Solution](/problems/posn1_67_bkk_p3)
-</div>
-
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-else" markdown="1">
-### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 4](https://grader.gchan.moe/problemset/c1_bkk67_4)
-
-!!! tip "**Difficulty**: `Very Easy`"
-!!! quote "**Source**: `POSN1`"
-??? Topics
-    - `If-else`
-
-[View Solution](/problems/posn1_67_bkk_p4)
-</div>
-
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,If-else" markdown="1">
-### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 5](https://grader.gchan.moe/problemset/c1_bkk67_5)
-
-!!! tip "**Difficulty**: `Very Easy`"
-!!! quote "**Source**: `POSN1`"
-??? Topics
-    - `Arrays`
-    - `If-else`
-
-[View Solution](/problems/posn1_67_bkk_p5)
-</div>
 </div>
 
 <!-- Scripts -->
