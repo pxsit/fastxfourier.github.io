@@ -76,9 +76,9 @@ hide: navigation, toc
 </div>
 
 <div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Sorting" markdown="1">
-### [posn1_bkk67 เรียงสตริง](https://grader.gchan.moe/problemset/c1_bkk67_2)
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 1](https://grader.gchan.moe/problemset/c1_bkk67_1)
 
-!!! success "**Difficulty**: `Very Easy`"
+!!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `Sorting`
@@ -87,9 +87,9 @@ hide: navigation, toc
 </div>
 
 <div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays" markdown="1">
-### [posn1_bkk67 สตริงซ้ำซ้ำ](https://grader.gchan.moe/problemset/c1_bkk67_3)
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 2](https://grader.gchan.moe/problemset/c1_bkk67_2)
 
-!!! success "**Difficulty**: `Very Easy`"
+!!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `Arrays`
@@ -98,9 +98,9 @@ hide: navigation, toc
 </div>
 
 <div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Math" markdown="1">
-### [posn1_bkk67 นักบินอวกาศ](https://grader.gchan.moe/problemset/c1_bkk67_4)
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 3](https://grader.gchan.moe/problemset/c1_bkk67_3)
 
-!!! success "**Difficulty**: `Very Easy`"
+!!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `Math`
@@ -109,9 +109,9 @@ hide: navigation, toc
 </div>
 
 <div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-else" markdown="1">
-### [posn1_bkk67 คิดถึงแม่](https://grader.gchan.moe/problemset/c1_bkk67_5)
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 4](https://grader.gchan.moe/problemset/c1_bkk67_4)
 
-!!! success "**Difficulty**: `Very Easy`"
+!!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `If-else`
@@ -120,9 +120,9 @@ hide: navigation, toc
 </div>
 
 <div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,If-else" markdown="1">
-### [posn1_bkk67 ตรวจบัตรเครดิต](https://grader.gchan.moe/problemset/c1_bkk67_5)
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 5](https://grader.gchan.moe/problemset/c1_bkk67_5)
 
-!!! success "**Difficulty**: `Very Easy`"
+!!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `Arrays`
