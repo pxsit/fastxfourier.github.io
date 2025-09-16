@@ -379,3 +379,21 @@ body[data-md-color-scheme="default"] .md-nav__link,
 body[data-md-color-scheme="default"] .md-tabs__link {
     color: #0f1112 !important;
 }
+
+.homelogo {
+    width: 200px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: black;
+    transition-duration: 400ms;
+}
+
+.homelogo:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition-duration: 400ms;
+}
+
+body.slate .homelogo:hover {
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    transition-duration: 400ms;
+}

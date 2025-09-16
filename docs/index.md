@@ -2,6 +2,8 @@
 hide: navigation, toc
 ---
 
+<img src=assets/images/logo.png class="homelogo">
+
 # Fast X Fourier
 
 ---
