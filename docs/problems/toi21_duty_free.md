@@ -3,15 +3,20 @@ title: toi21_duty_free
 tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 ---
 # [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
+
 ---
+
 ## Problem
+
 ### สรุปโจทย์
+
 เรามีลูกค้าจะซื้อกระเป๋า `N` คน ไล่คิวจากคนที่ `1` ถึงคนที่ `N` โดยคนที่ `i` สามารถเดินได้ไกลสุด `max_allowed_positions[i - 1]` ตำแหน่ง โดย:
 
 - ลูกค้าแต่ละคนจะเดินตรงไปหยิบกระเป๋าของตน โดยไม่หยิบกระเป๋าของคนอื่น
 - พนักงานสามารถนำกระเป๋าที่เหลือทั้งหมดมาจัดวางใหม่บนชั้นวางแต่ละหมายเลขได้อย่างอิสระ (ภายใต้เงื่อนไข **1 กระเป๋า ต่อ 1 ชั้นวาง**)
 
 ### สิ่งที่ต้องทำ
+
 เขียนโค้ดที่จะคำนวณจำนวนครั้งที่พนักงานต้องจัดวางกระเป๋าใหม่ให้น้อยที่สุด
 
 !!! note "Constraints"
@@ -21,12 +26,16 @@ tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 !!! note "Prerequisites"
     - DSU (Disjoint Set Union)
 ---
+
 ## Solution
+
 ### ไอเดียหลัก
+
 เราจะพยายามวางกระเป๋าของลูกค้าคนที่ `i` ให้อยู่ไกลที่สุดที่เป็นไปได้  
 เพื่อจะได้มีพื้นที่ด้านหน้าให้กับลูกค้าคนอื่นที่ `max_allowed_positions[i - 1]` มีค่าน้อย ๆ
 
 ### วิธีทำ
+
 วิธีการเขียนแบบ Brute Force คือ เราจะมี array ที่จะเก็บว่า $arr[i] =$ ชั้นวางที่ $i$ ได้วางกระเป๋าไว้หรือยัง (ตอนเริ่มต้น `arr[i] = false` สำหรับทุกๆ $i$)  
 โดยเราจะเริ่ม loop จาก slot ที่ $max\_allowed\_positions[i - 1]$ ไปจนถึง $1$  
 แล้วถ้าหากว่าช่องที่เรากำลังตรวจสอบอยู่ยังไม่ได้วางกระเป๋าไว้ (`arr[i] == false`)  
@@ -56,6 +65,7 @@ tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 ซึ่งจะทำให้ time complexity ทั้งหมดลดเหลือ $O(n)$ นั่นเอง  
 
 ### Summary
+
 - ใช้ Greedy Algorithm ในการเลือกช่องที่จะวางกระเป๋า  
 - ใช้ Disjoint Set Union ในการ optimize โค้ด  
 
@@ -73,28 +83,28 @@ const int N = 2e6 + 5;
 int i, f, aux[N], par[N];
 
 int dsu(int x){
-	if (aux[x] < f) {
-		aux[x] = i;
-		par[x] = x;
-	}
-	return par[x] = (par[x] == x ? x : dsu(par[x]));
+ if (aux[x] < f) {
+  aux[x] = i;
+  par[x] = x;
+ }
+ return par[x] = (par[x] == x ? x : dsu(par[x]));
 }
 
 int minimum_bag_rearrangement_time(vector<int> max_allowed_positions){
-	int n  = max_allowed_positions.size(); 
-	f = 1;
-	iota(par, par + N, 0);
-	memset(aux, -1, sizeof aux);
-	int ans = 0;
-	for (i = 1; i <= n; i++) {
-		int x = dsu(max_allowed_positions[i - 1]);
-		if (x <= 0) {
-			ans++, f = i;
-			x = dsu(max_allowed_positions[i - 1]);
-		}
-		par[x] = dsu(x - 1);
-	}
-	return ans;
+ int n  = max_allowed_positions.size(); 
+ f = 1;
+ iota(par, par + N, 0);
+ memset(aux, -1, sizeof aux);
+ int ans = 0;
+ for (i = 1; i <= n; i++) {
+  int x = dsu(max_allowed_positions[i - 1]);
+  if (x <= 0) {
+   ans++, f = i;
+   x = dsu(max_allowed_positions[i - 1]);
+  }
+  par[x] = dsu(x - 1);
+ }
+ return ans;
 }
 ```
 

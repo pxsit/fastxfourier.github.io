@@ -1,0 +1,6 @@
+.env
+.venv/
+venv/
+/site
+__pycache__/
+config.sh

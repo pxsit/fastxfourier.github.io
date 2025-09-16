@@ -39,7 +39,6 @@ hide: navigation, toc
 [View Solution](/problems/toi20_bit_string)
 </div>
 
-
 </div>
 
 <!-- Scripts -->
@@ -48,13 +47,13 @@ hide: navigation, toc
 function toggleTagPicker() {
     const picker = document.getElementById('tag-picker');
     const btn = document.getElementById('toggle-tags-btn');
-    
+
     const isHidden = picker.style.display === 'none';
     picker.style.display = isHidden ? 'block' : 'none';
-    
+
     // Change arrow
     btn.textContent = isHidden ? 'Tags ⬇️' : 'Tags ⬆️';
-    
+
     // Save visibility in localStorage
     localStorage.setItem('tagPickerVisible', picker.style.display);
 }
@@ -65,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById('toggle-tags-btn');
     const visible = localStorage.getItem('tagPickerVisible') || 'none';
     picker.style.display = visible;
-    
+
     btn.textContent = visible === 'none' ? 'Tags ⬆️' : 'Tags ⬇️';
 
     // Add instant filtering on checkbox change
