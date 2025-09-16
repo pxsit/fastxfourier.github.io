@@ -47,4 +47,4 @@ int main(){
 }
 ```
 
-หากมีข้อสงสัย comment ไว้ใต้ [post](https://web.facebook.com/share/p/1BF9b2z7V9/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️  
+หากมีข้อสงสัย comment ไว้ใต้ [post](https://www.facebook.com/share/p/1BWCw366mm/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️  
