@@ -14,6 +14,7 @@ hide: navigation, toc
 
   <!-- Difficulty filter -->
   <strong>Difficulty:</strong><br>
+  <label><input type="checkbox" value="Very Easy" class="filter-difficulty"> Very Easy</label>
   <label><input type="checkbox" value="Easy" class="filter-difficulty"> Easy</label>
   <label><input type="checkbox" value="Medium" class="filter-difficulty"> Medium</label>
   <label><input type="checkbox" value="Hard" class="filter-difficulty"> Hard</label>
@@ -22,14 +23,19 @@ hide: navigation, toc
   <!-- Source filter -->
   <strong>Source:</strong><br>
   <label><input type="checkbox" value="TOI" class="filter-source"> TOI</label>
+  <label><input type="checkbox" value="POSN1" class="filter-source"> POSN1</label>
   <br><br>
 
   <!-- Topics filter -->
   <strong>Topics:</strong><br>
+  <label><input type="checkbox" value="Sorting" class="tag"> Sorting</label>
+  <label><input type="checkbox" value="Arrays" class="tag"> Arrays</label>
+  <label><input type="checkbox" value="If-else" class="tag"> If-else</label>
+  <label><input type="checkbox" value="Math" class="tag"> Math</label>
+  <label><input type="checkbox" value="Data Structures" class="tag"> Data Structures</label>
   <label><input type="checkbox" value="Disjoint Set Union" class="tag"> Disjoint Set Union</label>
   <label><input type="checkbox" value="Dynamic Programming" class="tag"> Dynamic Programming</label>
   <label><input type="checkbox" value="Bitmask" class="tag"> Bitmask</label>
-  <label><input type="checkbox" value="Data Structures" class="tag"> Data Structures</label>
 </div>
 
 <!-- Problems grid -->
@@ -59,7 +65,7 @@ hide: navigation, toc
 </div>
 
 <div class="problem-card" data-difficulty="Easy" data-source="TOI" data-topics="Data Structures" markdown="1">
-### [toi20_orbs](https://programming.in.th/tasks/toi20_orbs/)
+### [toi20_orbs](https://grader.gchan.moe/problemset/c1_bkk67_1)
 
 !!! success "**Difficulty**: `Easy`"
 !!! quote "**Source**: `TOI`"
@@ -67,6 +73,62 @@ hide: navigation, toc
     - `Data Structures`
 
 [View Solution](/problems/toi20_orbs)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Sorting" markdown="1">
+### [posn1_bkk67 เรียงสตริง](https://grader.gchan.moe/problemset/c1_bkk67_2)
+
+!!! success "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Sorting`
+
+[View Solution](/problems/posn1_67_bkk_p1)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays" markdown="1">
+### [posn1_bkk67 สตริงซ้ำซ้ำ](https://grader.gchan.moe/problemset/c1_bkk67_3)
+
+!!! success "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Arrays`
+
+[View Solution](/problems/posn1_67_bkk_p2)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Math" markdown="1">
+### [posn1_bkk67 นักบินอวกาศ](https://grader.gchan.moe/problemset/c1_bkk67_4)
+
+!!! success "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Math`
+
+[View Solution](/problems/posn1_67_bkk_p3)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-else" markdown="1">
+### [posn1_bkk67 คิดถึงแม่](https://grader.gchan.moe/problemset/c1_bkk67_5)
+
+!!! success "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `If-else`
+
+[View Solution](/problems/posn1_67_bkk_p4)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,If-else" markdown="1">
+### [posn1_bkk67 ตรวจบัตรเครดิต](https://grader.gchan.moe/problemset/c1_bkk67_5)
+
+!!! success "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Arrays`
+    - `If-else`
+
+[View Solution](/problems/posn1_67_bkk_p5)
 </div>
 </div>
 
@@ -76,13 +138,13 @@ hide: navigation, toc
 function toggleTagPicker() {
     const picker = document.getElementById('tag-picker');
     const btn = document.getElementById('toggle-tags-btn');
-    
+
     const isHidden = picker.style.display === 'none';
     picker.style.display = isHidden ? 'block' : 'none';
-    
+
     // Change arrow
     btn.textContent = isHidden ? 'Tags ⬇️' : 'Tags ⬆️';
-    
+
     // Save visibility in localStorage
     localStorage.setItem('tagPickerVisible', picker.style.display);
 }
