@@ -46,9 +46,28 @@
 ### Code
 
 ```cpp title="credit_card.c"
+#include <stdio.h>
 
+int main(){
+    char str[16];
+    scanf("%s", str);
+    int a[16];
+    for (int i = 0; i < 16; i++) {
+        a[i] = str[i] - '0';
+    }
+    int sum = 0;
+    for (int i = 0; i < 15; i++) {
+        if (i % 2 == 0) a[i] *= 2;
+        if (a[i] > 9) sum += a[i] % 10 + 1;
+        else sum += a[i];
+    }
+    if ((10 - (sum % 10)) % 10 == a[15]) {
+        printf("yes");
+    }
+    else {
+        printf("no");
+    }
+}
 ```
-!!! note "Total Time Complexity"  
-    $O(N)$ but N = 16
 
 หากมีข้อสงสัย comment ไว้ใต้ [post](https://web.facebook.com/share/p/1BF9b2z7V9/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️  

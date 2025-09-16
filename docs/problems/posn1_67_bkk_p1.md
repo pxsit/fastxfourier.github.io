@@ -25,9 +25,28 @@
 ### Code
 
 ```cpp title="string_sorting.c"
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    char str[35];
+    scanf("%s", str);
+    int n = strlen(str);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            if (str[j] > str[j + 1]) {
+                char temp = str[j];
+                str[j] = str[j + 1];
+                str[j + 1] = temp;
+            }
+        }
+    }
+    printf("%c ", str[0]);
+    for (int i = 1; i < n; i++) {
+        if (str[i] == str[i - 1]) continue;
+        printf("%c ", str[i]);
+    }
+}
 ```
-!!! note "Total Time Complexity"  
-    $O(N^2)$
 
 หากมีข้อสงสัย comment ไว้ใต้ [post](https://web.facebook.com/share/p/1BF9b2z7V9/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️  
