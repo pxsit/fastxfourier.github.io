@@ -3,6 +3,7 @@ hide: navigation, toc
 ---
 
 # Others
+---
 
 <div class="problem-card-other" markdown="1">
 ### เฉลยข้อสอบ [สอวน.คอมพิวเตอร์](/assets/posn1-68.pdf){:download="posn1-68.pdf"} คัดเลือกเข้าค่าย 1 ปีการศึกษา 2568

@@ -3,6 +3,7 @@ hide: navigation, toc
 ---
 
 # Algorithms
+---
 
 <!-- Tags menu at the top -->
 <div style="margin-bottom: 20px;">
